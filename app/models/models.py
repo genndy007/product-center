@@ -1,8 +1,8 @@
 from sqlalchemy import Column, Float, Integer, String
-from .database import Base
+from app.database.database import Base
 
 
-class Product(Base):
+class ProductModel(Base):
     __tablename__ = 'products'
 
     product_id = Column(Integer, primary_key=True)
@@ -21,7 +21,7 @@ class Product(Base):
         return f'Product {self.name}, colour: {self.colour}, weight: {self.weight}, price: {self.price}'
 
 
-class Address(Base):
+class AddressModel(Base):
     __tablename__ = 'addresses'
 
     address_id = Column(Integer, primary_key=True)
