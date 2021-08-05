@@ -1,4 +1,5 @@
 flask
 flask_admin
 sqlalchemy
+flask-security-too
 
